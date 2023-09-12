@@ -10,7 +10,7 @@
 // ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
 // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 
-const names = ["Alex", "Jacob", "Mark", "Max"]
+const names = ["Alex", "Jacob", "Mark"]
 
 function who_likes_it(){
     switch(names.length){
