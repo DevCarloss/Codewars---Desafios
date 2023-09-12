@@ -8,19 +8,18 @@
 // * 'abc' =>  ['ab', 'c_']
 // * 'abcdef' => ['ab', 'cd', 'ef']
 
-let letters = [
-    'ab',
-    'cd',
-    'ef',
-    'ghi'
-]
 
-letters.forEach((item) => {
-    switch(item.length % 2){
-        case 0:
-            console.log(item)
+function solution(str){
+    var list = str.match(/.{1,2}/g).map(function (array) {
+      switch(array.length % 2){
+          case 1 :
+            return array + '_'
             break
-        default :
-            console.log(item + '_')
-    }
-})
+          default :
+            return array
+      }
+    })
+    return console.log(list)
+  }
+  
+  solution('abcdefg')
